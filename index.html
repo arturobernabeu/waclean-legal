@@ -170,10 +170,26 @@
       código intente hacer.
     </p>
     <p>
-      Los dos únicos permisos que aparecen en el manifiesto los añaden
-      bibliotecas del propio Android —<code>ACCESS_NETWORK_STATE</code> y un
-      permiso interno de comunicación entre componentes— y ninguno de los dos
-      permite enviar información a ningún sitio.
+      El manifiesto declara además <code>android.permission.POST_NOTIFICATIONS</code>,
+      y solo si usted activa a mano el recordatorio semanal de uso en Ajustes.
+      Esa notificación es un aviso genérico —«recuerde revisar el multimedia
+      de WhatsApp»— que no incluye ningún dato suyo ni sale del teléfono; al
+      tocarla, abre la aplicación, que ya vuelve a leer el disco por su cuenta.
+    </p>
+    <p>
+      Ese recordatorio se programa con WorkManager, el componente de Android
+      para tareas periódicas, que añade automáticamente tres permisos más
+      —<code>WAKE_LOCK</code>, <code>RECEIVE_BOOT_COMPLETED</code> y
+      <code>FOREGROUND_SERVICE</code>— para poder despertar el dispositivo una
+      vez por semana y sobrevivir a un reinicio. Los tres son de protección
+      normal: Android los concede sin preguntarle, y ninguno abre una conexión
+      de red ni da acceso a información que no tuviera ya la propia aplicación.
+    </p>
+    <p>
+      El resto de permisos del manifiesto los añaden bibliotecas del propio
+      Android —<code>ACCESS_NETWORK_STATE</code> y un permiso interno de
+      comunicación entre componentes— y tampoco permiten enviar información a
+      ningún sitio.
     </p>
     <p class="apagado">
       Cualquiera puede verificarlo descargando el archivo de la aplicación
@@ -325,7 +341,7 @@
       WaClean no está afiliado a WhatsApp LLC ni a Meta Platforms, Inc.
       WhatsApp es una marca registrada de sus respectivos titulares.
     </p>
-    <p class="apagado">Última actualización: 1 de agosto de 2026</p>
+    <p class="apagado">Última actualización: 13 de agosto de 2026</p>
   </div>
 </footer>
 
