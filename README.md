@@ -1,25 +1,12 @@
 # waclean-legal
 
-Documentos legales públicos de **WaClean**, publicados con GitHub Pages en
-<https://arturobernabeu.github.io/waclean-legal/>.
+**Repositorio sustituido por [`cleanity-legal`](https://github.com/arturobernabeu/cleanity-legal).**
 
-Existe como repositorio aparte a propósito: el código de WaClean es privado y no
-tiene por qué dejar de serlo para que una página legal esté accesible.
+La aplicación WaClean pasó a llamarse **Cleanity** (v1.7.1, 30-10-2026). La política de
+privacidad se publica ahora en <https://arturobernabeu.github.io/cleanity-legal/>.
 
-## Contenido
-
-- `index.html` — política de privacidad. **Google Play exige que esta URL siga
-  viva mientras la aplicación esté publicada**; si deja de responder, la ficha
-  puede retirarse.
-
-## Reglas
-
-- **Sin recursos externos.** Ni fuentes, ni hojas de estilo, ni analítica. Una
-  página que afirma que la aplicación no envía datos no puede filtrar la IP de
-  quien la lee a un tercero para pintar una tipografía.
-- Todo va en un único fichero, con el CSS incrustado. No hay proceso de
-  compilación que pueda romperse dentro de cinco años.
-- Al modificar el texto, actualizar la fecha del pie.
-- Si alguna versión de la aplicación cambia lo que aquí se afirma —sobre todo la
-  ausencia del permiso de internet—, **esta página se actualiza antes de
-  publicar esa versión**, no después.
+Este repositorio se conserva solo para que la dirección antigua
+<https://arturobernabeu.github.io/waclean-legal/> siga respondiendo y redirija a la nueva: las
+páginas de GitHub Pages no se redirigen solas al renombrar un repositorio, y puede haber
+enlaces antiguos (la ficha anterior de Play, cachés). `index.html` es un aviso con redirección;
+la política vigente ya no está aquí.
